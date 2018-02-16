@@ -83,7 +83,6 @@ matrix:
     - php: 7.2
       env:
         - coverage=true
-        - phpstan=true
     - php: 7.2
       env: setup=lowest
     - php: 7.2

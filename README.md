@@ -73,7 +73,7 @@ printf("NotSO8601 Now: %s", AlteredCarbon::now()->toNotSO8601String());
 
 ### Without Composer
 
-Why are you not using [composer](http://getcomposer.org/)? Download [Carbon.php](https://github.com/briannesbitt/Carbon/blob/master/src/Carbon/Carbon.php) from the repo and save the file into your project path somewhere.
+Why are you not using [composer](http://getcomposer.org/)? Download [AlteredCarbon.php](https://github.com/Mossengine/AlteredCarbon/blob/master/src/AlteredCarbon.php) from the repo and save the file into your project path somewhere.
 
 ```php
 <?php

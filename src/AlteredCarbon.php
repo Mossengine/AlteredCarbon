@@ -20,9 +20,10 @@ class AlteredCarbon extends Carbon {
     const NotSO8601Regex = '/^(\d{4})([0][0-9]|[1][0-2])([0-2][0-9]|[3][0-1])([0-1][0-9]|[2][0-3])([0-5][0-9])([0-5][0-9]):([A-z](.*))\/([A-z](.*))$/';
 
     /**
-     * Carbonite constructor.
+     * AlteredCarbon constructor.
      * @param null $time
      * @param null $tz
+     * @throws \Exception
      */
     public function __construct($time = null, $tz = null)
     {
@@ -40,6 +41,7 @@ class AlteredCarbon extends Carbon {
     /**
      * @param $stringDateTimeAndOrZone
      * @return static
+     * @throws \Exception
      */
     public static function createFromNotSO8601($stringDateTimeAndOrZone)
     {
@@ -48,8 +50,6 @@ class AlteredCarbon extends Carbon {
         if ($dt instanceof DateTime) {
             return static::instance($dt);
         }
-
-        throw new InvalidArgumentException(implode(PHP_EOL, parent::getLastErrors()));
     }
 
     /**

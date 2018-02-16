@@ -70,7 +70,7 @@ class CarboniteTest extends PHPUnit_Framework_TestCase{
     public function testCreateFromNotSO8601AndtoNotSO8601StringWithInvalidFormat() {
         $stringDateTime = '2018-02-15 13:55:43';
         try {
-            $alteredCarbon = Mossengine\AlteredCarbon\AlteredCarbon::createFromNotSO8601($stringDateTime);
+            Mossengine\AlteredCarbon\AlteredCarbon::createFromNotSO8601($stringDateTime);
             $boolResults = true;
         } catch (\Exception $e) {
             $boolResults = false;

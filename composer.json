@@ -14,7 +14,7 @@
         "issues": "https://github.com/Mossengine/AlteredCarbon/issues",
         "source": "https://github.com/Mossengine/AlteredCarbon"
     },
-    "license": "GNU",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Brendon Moss",

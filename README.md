@@ -5,6 +5,8 @@
 [![Latest Unstable Version](https://poser.pugx.org/mossengine/alteredcarbon/v/unstable)](https://packagist.org/packages/mossengine/alteredcarbon)
 [![License](https://poser.pugx.org/mossengine/alteredcarbon/license)](https://packagist.org/packages/mossengine/alteredcarbon)
 
+[![Build Status](https://travis-ci.org/Mossengine/AlteredCarbon.svg?branch=master)](https://travis-ci.org/Mossengine/AlteredCarbon)
+
 [![Monthly Downloads](https://poser.pugx.org/mossengine/alteredcarbon/d/monthly)](https://packagist.org/packages/mossengine/alteredcarbon)
 [![Daily Downloads](https://poser.pugx.org/mossengine/alteredcarbon/d/daily)](https://packagist.org/packages/mossengine/alteredcarbon)
 

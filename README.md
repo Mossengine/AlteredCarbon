@@ -1,5 +1,4 @@
-AlteredCarbon
-=============
+# AlteredCarbon
 
 This Library extends the Carbon\Carbon class to include extra support for other DateTime formats and in particular the NotSO8601 datetime format.
 

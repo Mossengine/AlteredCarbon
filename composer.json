@@ -3,6 +3,7 @@
     "type": "library",
     "description": "Carbon extended library with NotSO8601 support",
     "keywords": [
+        "carbon",
         "date",
         "time",
         "DateTime",

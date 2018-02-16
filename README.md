@@ -3,6 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/mossengine/alteredcarbon/v/stable)](https://packagist.org/packages/mossengine/alteredcarbon)
 [![Latest Unstable Version](https://poser.pugx.org/mossengine/alteredcarbon/v/unstable)](https://packagist.org/packages/mossengine/alteredcarbon)
 [![License](https://poser.pugx.org/mossengine/alteredcarbon/license)](https://packagist.org/packages/mossengine/alteredcarbon)
+[![composer.lock](https://poser.pugx.org/mossengine/alteredcarbon/composerlock)](https://packagist.org/packages/mossengine/alteredcarbon)
 
 [![Build Status](https://travis-ci.org/Mossengine/AlteredCarbon.svg?branch=master)](https://travis-ci.org/Mossengine/AlteredCarbon)
 [![codecov](https://codecov.io/gh/Mossengine/AlteredCarbon/branch/master/graph/badge.svg)](https://codecov.io/gh/Mossengine/AlteredCarbon)

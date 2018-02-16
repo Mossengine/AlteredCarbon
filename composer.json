@@ -1,0 +1,25 @@
+{
+    "name": "mossengine/alteredcarbon",
+    "description": "Carbon extended library with NotSO8601 support",
+    "keywords": ["date", "time", "timezone", "daylight"],
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Brendon Moss",
+            "email": "brenmoss@mossengine.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=5.4",
+        "nesbot/carbon": "1.22.1"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "Mossengine\\AlteredCarbon\\": "src/"
+        }
+    }
+}

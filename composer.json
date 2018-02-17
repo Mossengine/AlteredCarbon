@@ -1,14 +1,15 @@
 {
     "name": "mossengine/alteredcarbon",
     "type": "library",
-    "description": "Carbon extended library with NotSO8601 support",
+    "description": "Carbon extended library with AltSO-8601 support",
     "keywords": [
         "carbon",
         "date",
         "time",
         "DateTime",
         "timezone",
-        "daylight"
+        "daylight",
+        "altso-8601"
     ],
     "homepage": "https://github.com/Mossengine/AlteredCarbon",
     "support": {

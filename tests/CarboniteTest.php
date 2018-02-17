@@ -3,7 +3,7 @@
 /**
  * Class CarboniteTest
  */
-class CarboniteTest extends PHPUnit_Framework_TestCase{
+class AltSOTest extends PHPUnit_Framework_TestCase{
     /**
      * Just check if the Carbonite class has no syntax error
      *
@@ -18,14 +18,14 @@ class CarboniteTest extends PHPUnit_Framework_TestCase{
     }
 
     /**
-     * This tests the constructor for AlteredCarbon to detect the correct format and return back as NotSO8601 format to be the same as the original
+     * This tests the constructor for AlteredCarbon to detect the correct format and return back as AltSO8601 format to be the same as the original
      */
-    public function testConstructionOfNotSO8601() {
-        $stringNotSO8601 = '20180215135543:Australia/Brisbane';
-        $alteredCarbon = new Mossengine\AlteredCarbon\AlteredCarbon($stringNotSO8601);
-        $this->assertSame($stringNotSO8601, $alteredCarbon->toNotSO8601String());
+    public function testConstructionOfAltSO8601() {
+        $stringAltSO8601 = '20180215135543:Australia/Brisbane';
+        $alteredCarbon = new Mossengine\AlteredCarbon\AlteredCarbon($stringAltSO8601);
+        $this->assertSame($stringAltSO8601, $alteredCarbon->toAltSO8601String());
         unset($carbonite);
-        unset($stringNotSO8601);
+        unset($stringAltSO8601);
     }
 
     /**
@@ -37,46 +37,46 @@ class CarboniteTest extends PHPUnit_Framework_TestCase{
         $this->assertSame($stringDateTime, $alteredCarbon->toDateTimeString());
         $this->assertSame('UTC', $alteredCarbon->getTimezone()->getName());
         unset($carbonite);
-        unset($stringNotSO8601);
+        unset($stringAltSO8601);
     }
 
     /**
-     * This tests the createFromNotSO8601 and the toNotSO8601String functions
+     * This tests the createFromAltSO8601 and the toAltSO8601String functions
      */
-    public function testCreateFromNotSO8601AndtoNotSO8601String() {
-        $stringNotSO8601 = '20180215135543:Australia/Brisbane';
-        $alteredCarbon = Mossengine\AlteredCarbon\AlteredCarbon::createFromNotSO8601($stringNotSO8601);
-        $this->assertSame($stringNotSO8601, $alteredCarbon->toNotSO8601String());
+    public function testCreateFromAltSO8601AndtoAltSO8601String() {
+        $stringAltSO8601 = '20180215135543:Australia/Brisbane';
+        $alteredCarbon = Mossengine\AlteredCarbon\AlteredCarbon::createFromAltSO8601($stringAltSO8601);
+        $this->assertSame($stringAltSO8601, $alteredCarbon->toAltSO8601String());
         unset($carbonite);
-        unset($stringNotSO8601);
+        unset($stringAltSO8601);
     }
 
     /**
-     * This tests the createFromNotSO8601 and the toNotSO8601String functions
+     * This tests the createFromAltSO8601 and the toAltSO8601String functions
      */
-    public function testCreateFromAnyDateTimeAndtoNotSO8601String() {
-        $stringNotSO8601 = '20180215135543:Australia/Brisbane';
+    public function testCreateFromAnyDateTimeAndtoAltSO8601String() {
+        $stringAltSO8601 = '20180215135543:Australia/Brisbane';
         $stringDateTime = '2018-02-15 13:55:43';
         $stringTimezone = 'Australia/Brisbane';
         $alteredCarbon = new Mossengine\AlteredCarbon\AlteredCarbon($stringDateTime, $stringTimezone);
-        $this->assertSame($stringNotSO8601, $alteredCarbon->toNotSO8601String());
+        $this->assertSame($stringAltSO8601, $alteredCarbon->toAltSO8601String());
         unset($carbonite);
-        unset($stringNotSO8601);
+        unset($stringAltSO8601);
     }
 
     /**
-     * This tests the createFromNotSO8601 and the toNotSO8601String functions
+     * This tests the createFromAltSO8601 and the toAltSO8601String functions
      */
-    public function testCreateFromNotSO8601AndtoNotSO8601StringWithInvalidFormat() {
+    public function testCreateFromAltSO8601AndtoAltSO8601StringWithInvalidFormat() {
         $stringDateTime = '2018-02-15 13:55:43';
         try {
-            Mossengine\AlteredCarbon\AlteredCarbon::createFromNotSO8601($stringDateTime);
+            Mossengine\AlteredCarbon\AlteredCarbon::createFromAltSO8601($stringDateTime);
             $boolResults = true;
         } catch (\Exception $e) {
             $boolResults = false;
         }
         $this->assertNotTrue($boolResults);
         unset($carbonite);
-        unset($stringNotSO8601);
+        unset($stringAltSO8601);
     }
 }

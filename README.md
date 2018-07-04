@@ -1,14 +1,16 @@
 # AlteredCarbon
 
-![Travis](https://img.shields.io/travis/Mossengine/AlteredCarbon.svg)
-![Codecov](https://img.shields.io/codecov/c/github/Mossengine/AlteredCarbon.svg)
+[![Latest Stable Version](https://poser.pugx.org/mossengine/alteredcarbon/v/stable)](https://packagist.org/packages/mossengine/alteredcarbon)
+[![Latest Unstable Version](https://poser.pugx.org/mossengine/alteredcarbon/v/unstable)](https://packagist.org/packages/mossengine/alteredcarbon)
+[![License](https://poser.pugx.org/mossengine/alteredcarbon/license)](https://packagist.org/packages/mossengine/alteredcarbon)
+[![composer.lock](https://poser.pugx.org/mossengine/alteredcarbon/composerlock)](https://packagist.org/packages/mossengine/alteredcarbon)
 
-![License](https://poser.pugx.org/mossengine/alteredcarbon/license)
-![composer.lock](https://poser.pugx.org/mossengine/alteredcarbon/composerlock)
+[![Build Status](https://travis-ci.org/Mossengine/AlteredCarbon.svg?branch=master)](https://travis-ci.org/Mossengine/AlteredCarbon)
+[![codecov](https://codecov.io/gh/Mossengine/AlteredCarbon/branch/master/graph/badge.svg)](https://codecov.io/gh/Mossengine/AlteredCarbon)
 
-![Total Downloads](https://img.shields.io/packagist/dt/Mossengine/AlteredCarbon.svg)
-![Monthly Downloads](https://img.shields.io/packagist/dm/Mossengine/AlteredCarbon.svg)
-![Daily Downloads](https://img.shields.io/packagist/dd/Mossengine/AlteredCarbon.svg)
+[![Total Downloads](https://poser.pugx.org/mossengine/alteredcarbon/downloads)](https://packagist.org/packages/mossengine/alteredcarbon)
+[![Monthly Downloads](https://poser.pugx.org/mossengine/alteredcarbon/d/monthly)](https://packagist.org/packages/mossengine/alteredcarbon)
+[![Daily Downloads](https://poser.pugx.org/mossengine/alteredcarbon/d/daily)](https://packagist.org/packages/mossengine/alteredcarbon)
 
 This Library extends the Carbon\Carbon class to include extra support for other DateTime formats and in particular the AltSO8601 datetime format.
 

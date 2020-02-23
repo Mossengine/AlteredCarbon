@@ -7,7 +7,8 @@ use DateTime;
  * Class Carbonite
  * @package Mossengine\Carbonite
  */
-class AlteredCarbon extends Carbon {
+class AlteredCarbon extends Carbon
+{
     /**
      * Constant for the AltSO8601 DateTime Format
      */

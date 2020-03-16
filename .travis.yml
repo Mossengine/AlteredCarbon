@@ -2,27 +2,28 @@ language: php
 
 before_script:
   - travis_retry composer self-update
-  - travis_retry composer install --no-interaction --prefer-source --dev
 
 script:
-  - vendor/bin/phpunit --coverage-clover=coverage.xml
+  - composer test_ci
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 install:
-  - travis_retry composer update --prefer-dist --no-interaction --no-suggest --prefer-stable
+  - travis_retry composer install --prefer-dist --no-interaction
 
 matrix:
   include:
-    - php: 5.3
-      dist: precise
-
     - php: 5.4
+      dist: trusty
     - php: 5.5
+      dist: trusty
+
     - php: 5.6
     - php: 7.0
     - php: 7.1
     - php: 7.2
+    - php: 7.3
+    - php: 7.4
 
   fast_finish: true

@@ -24,8 +24,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "nesbot/carbon": "1.22.1",
+        "php": ">=5.4.0",
+        "nesbot/carbon": "1.22.1 || ^2.28",
         "symfony/translation": "~2.6 || ~3.0 || ~4.0"
     },
     "require-dev": {
@@ -45,12 +45,21 @@
     "config": {
         "sort-packages": true
     },
+    "prefer-stable": true,
     "scripts": {
         "test": [
             "@phpunit",
-            "@phpcs"
+            "@phpcs_src",
+            "@phpcs_tests"
+        ],
+        "test_ci": [
+            "@phpunit_coverage",
+            "@phpcs_src",
+            "@phpcs_tests"
         ],
         "phpunit": "phpunit",
-        "phpcs": "php-cs-fixer fix -v --diff --dry-run"
+        "phpunit_coverage": "vendor/bin/phpunit --coverage-clover=coverage.xml",
+        "phpcs_src": "vendor/bin/php-cs-fixer fix src -v --diff --dry-run",
+        "phpcs_tests": "vendor/bin/php-cs-fixer fix tests -v --diff --dry-run"
     }
 }
